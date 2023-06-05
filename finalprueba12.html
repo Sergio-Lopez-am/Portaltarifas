@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Buscador Empresarial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    form input[type="text"] {
+      width: 250px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button[type="submit"] {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Buscador Empresarial</h1>
+  
+    <form onsubmit="return buscar()">
+      <input type="text" id="codigo" placeholder="Ingresa el código de búsqueda" required>
+      <button type="submit">Buscar</button>
+    </form>
+  </div>
+
+  <script>
+    function buscar() {
+      event.preventDefault();
+
+      var codigo = document.getElementById('codigo').value;
+      
+      // Aquí puedes agregar tu lógica para buscar y obtener el enlace correspondiente
+      // Utilizaremos un objeto JavaScript para mapear códigos y enlaces
+      var enlaces = {
+        "805027164": "https://drive.google.com/file/d/1HHuRqJeV6Bqpx_ALhZ0dVFUx",
+        "901073066": "https://drive.google.com/file/d/11AajsMO4zxHo",
+        "806016225": "https://drive.google.com/file/d/1XDEny9EWQcEKbKB47LGYzJHtno4idnl1/view?usp=sharing",
+        "901011962": "https://drive.google.com/file/d/1uxC9ISSd_pJxX",
+        "900726007": "https://drive.google.com/file/d/1wGtTinr4V",
+        "900980728": "https://drive.google.com/file/d/1pnW5BzUOPF526Mam",
+        "900233019": "https://drive.google.com/file/d/1PkDrzhQaSq",
+        "900612531": "https://drive.google.com/file/d/1fZ6Cf",
+        "900958115": "https://drive.google.com/file/d/1Bw43vkpCCREpjxu65Cs3r7OI9yGKIN8g/view?usp=sharing",
+        "900204617": "https://drive.google.com/file/d/1UV",
+        "900385265": "https://drive.google.com/file/d/1cAdc0OJTv0qy",
+        "900653844": "https://drive.google.com/file/d/1DG",
+        "900280774": "https://drive.google.com/file/d/15dy9f6wElHgdUsvYpvOkyGXt4jc4vUBZ/view?usp=sharing",
+        "901163399": "https://drive.google.com/file/d/18mpwIBSma3R",
+        "900674295": "https://drive.google.com/file/d/1mUmrsPE7O8Ea",
+        "900161924": "https://drive.google.com/file/d/1RmcvmZ6jXer2P8IN2z_wZC8JN8MfEOMl/view?usp=sharing",
+        "9003044178": "https://drive.google.com/file/d/1TNSGpFkdbTgE9pE3rHcSXJIfOjdKLyeR/view?usp=sharing",
+        "900095504": "https://drive.google.com/file/d/1JhQJWRV1a1",
+        "901448402": "https://drive.google.com/file/d/1",
+        "900405012": "https://drive.google.com/file/d/1BJViI3kUR2HES641wqejjzeqrPFvrKTN/view?usp=sharing",
+        "90107993": "https://drive.google.com/file/d/1cNEfHdiqSAqfXnrw8Kb6Uqyoi0OlIpjw/view?usp=sharing",
+        "806008356": "https://drive.google.com/file/d/1BrxQ2MKpEZWoZBNBedREVEBa0TPoiTwL/view?usp=sharing"
+
+      };
+
+      // Verificamos si el código existe en el objeto de enlaces
+      if (codigo in enlaces) {
+        var enlace = enlaces[codigo];
+        window.location.href = enlace;
+      } else {
+        alert("El código ingresado no existe");
+      }
+      
+      return false;
+    }
+  </script>
+</body>
+</html>
+En el portal de tarifas podras consultar con el numero del nit (sin digito de verificacion) los anexos tecnologicos vigentes con el detalle de servicios y valores
+
+
+
+
+
